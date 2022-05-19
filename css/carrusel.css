@@ -1,0 +1,43 @@
+#carrusel {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#carrusel .left-arrow {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+#carrusel .right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.carrusel {
+    width: 2000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+}
+
+.carrusel>div {
+    float: left;
+    width: 265px;
+    height: 438px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.carrusel img {
+    cursor: pointer;
+}

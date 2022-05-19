@@ -1,0 +1,223 @@
+.content {
+    padding: 35px 50px;
+    display: grid;
+    justify-content: center;
+}
+
+header {
+    height: 179px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.phone-header-center {
+    display: none;
+}
+
+.header-nav-center {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.div-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.div-search div.barra {
+    width: 500px;
+    height: 42px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--icon-color);
+    border-radius: 10px;
+}
+
+.div-search div.barra input[type="text"] {
+    padding: 0px 10px;
+    background-color: transparent;
+    width: 651px;
+    height: 52px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: var(--blanco);
+}
+
+.div-search div.barra button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.div-search div.barra input::placeholder {
+    color: var(--blanco);
+}
+
+.div-right-center {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+    margin-right: 12px;
+}
+
+.div-right-center div img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.div-account,
+.div-account div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.div-account img.desplegar {
+    width: 20px;
+}
+
+.header-nav-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(---barra-nav);
+    margin-top: 10px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.nav-header ul li a {
+    text-decoration: none;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
+/*PRIMERA SECCION*/
+
+.section-banner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.39) url('/img/banners/sec-desktop-g.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    height: auto;
+    border-radius: 10px;
+    max-width: 450px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card-info div {
+    padding: 20px;
+}
+
+.card-info div h3 {
+    color: var(--icon-color);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.card-info div p {
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+@media (min-width:769px) and (max-width:919px) {
+    .header-nav-center {
+        gap: 5px;
+    }
+    .nav-header ul {
+        gap: 40px;
+    }
+    .div-search div.barra {
+        width: 400px;
+    }
+    div.linea {
+        width: 700px;
+    }
+}
+
+@media (min-width:920px) and (max-width: 1280px) {
+    .banner-info {
+        width: 95%;
+    }
+    .card-info {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-info div {
+        margin-top: 20px;
+    }
+    .servicios-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .servicios-container-item {
+        width: 100%;
+        max-width: 277px;
+        max-height: 120px;
+    }
+}
+
+@media (min-width:1281px) {
+    .card-info {
+        width: 390px;
+    }
+    .card-info div {
+        margin-top: 80px;
+    }
+    .servicios-container {
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-column-gap: 100px;
+    }
+}
+
+@media (min-width:1181px) {
+    #product_2 {
+        display: block;
+    }
+}
+
+
+/*SECTION #2*/
+
+.servicios-container {
+    justify-content: center;
+}
+
+@media (min-width: 866px) {
+    .fondo-panel--pc {
+        display: block;
+    }
+}

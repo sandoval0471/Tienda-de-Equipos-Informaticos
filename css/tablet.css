@@ -1,0 +1,95 @@
+header {
+    height: 149px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-nav-bottom,
+.header-nav-center {
+    display: none;
+}
+
+.tablet-logo {
+    display: block;
+}
+
+.phone-header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2px 10px;
+    padding: 10px;
+}
+
+.header-nav-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+.info-nav div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.info-nav div img {
+    cursor: pointer;
+    width: 28px;
+}
+
+.redes-nav nav {
+    display: flex;
+    padding: 15px 15px;
+    gap: 20px;
+}
+
+@media (min-width: 480px) and (max-width: 520px) {
+    .info-nav div {
+        margin-left: 10px;
+    }
+    .info-nav div p {
+        display: none;
+    }
+}
+
+
+/*SECTION 1*/
+
+.content {
+    padding: 15px 8px 15px 8px;
+}
+
+.card-info {
+    display: none;
+}
+
+
+/*SECTION 2*/
+
+.servicios-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/*SECTION #4*/
+
+@media (min-width: 560px) {
+    .notebook-section {
+        flex-wrap: nowrap;
+    }
+    #product_1 {
+        display: block;
+    }
+}

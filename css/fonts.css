@@ -1,0 +1,4 @@
+@font-face {
+    font-family: Inra Sans;
+    src: url('/fonts/InriaSans-Regular.ttf') format('truetype'), url('/fonts/InriaSans-Light.ttf') format('truetype'), url('/fonts/InriaSans-Bold.ttf') format('truetype');
+}

@@ -1,0 +1,14 @@
+.btn-primary {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.8rem;
+    padding: 9px 25px;
+    border-radius: 10px;
+    background-color: var(--icon-color);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(---barra-nav);
+}
