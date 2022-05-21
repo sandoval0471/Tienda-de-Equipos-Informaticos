@@ -1,0 +1,241 @@
+.detail-general-container,
+.detail-white-container,
+.img-product-other,
+.img-product-other div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.detail-white-container {
+    width: 90%;
+    background-color: var(--blanco);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+
+/*imagen del producto*/
+
+.img-product-detail img {
+    width: 60%;
+}
+
+.img-product-other div {
+    width: 100%;
+}
+
+.img-product-other div img {
+    width: 60%;
+    height: 100%;
+}
+
+.div-img-product-other-1 img {
+    border: 2px solid var(--icon-color)
+}
+
+.detail-general-info {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.title-detail-general {
+    margin-top: 40px;
+}
+
+.title-detail-general h3 {
+    color: #2F313A;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.middle-detail-general {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price-container {
+    display: flex;
+    gap: 30px;
+}
+
+.discount-detail-product {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price-detail-product {
+    padding: 8px 10px;
+    border: 2px solid #F1F1F1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+}
+
+.price-detail-product p {
+    color: var(--icon-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+span.span-discount {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--verde);
+}
+
+span.span-old-price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 18px;
+    text-align: center;
+    color: var(--font);
+}
+
+.resumen-general-product p {
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 19px;
+    color: var(--font);
+}
+
+.actions-detail-general {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.actions-detail-general div a.btn-primary {
+    padding: 9px 5px;
+    font-size: 1.5rem;
+}
+
+.categories-detail-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.categories-detail-product p {
+    line-height: 19px;
+    color: var(--font);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.linea-detail-general {
+    border: .5px solid #c0c0c06a;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.comments-section-detail {
+    padding: 0px 15px;
+}
+
+.especification-container-divider {
+    margin-bottom: 20px;
+}
+
+.detail-product-especification div p,
+.detail-product-description div p {
+    text-align: justify;
+    font-size: 1.7rem;
+}
+
+.detail-product-especification,
+.detail-product-description {
+    padding: 0px 15px;
+}
+
+.tabpane-comments-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.tabpane-comments-section div {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.tab-comment {
+    background-color: var(--icon-color);
+    width: 100%;
+    padding: 8px;
+}
+
+.tab-reviews {
+    background-color: #D0D0D0;
+    width: 100%;
+    padding: 8px;
+}
+
+.header-comment-card {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.footer-comment-card p {
+    text-align: justify;
+}
+
+.commnet-card {
+    margin: bottom 30px;
+}
+
+.comment-option-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-user-comment {
+    text-align: left;
+}
+
+.icon-user-comment img {
+    width: 33px;
+    height: 33px;
+}
+
+.textarea-comment textarea {
+    width: 100%;
+}
+
+.before-textarea {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

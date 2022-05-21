@@ -45,6 +45,10 @@ body {
     font-size: 1.5rem;
 }
 
+textarea {
+    resize: none
+}
+
 .div-logo {
     display: flex;
     justify-content: center;
@@ -120,7 +124,7 @@ body {
     background-color: var(--blanco);
     padding: 30px 20px;
     border-radius: 10px;
-    transition: all 0.15s ease;
+    transition: all 0.3s ease;
 }
 
 .servicios-container-item div {
@@ -237,6 +241,11 @@ div.linea-azul {
     display: flex;
     flex-direction: column;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.19);
+    transition: all .3s ease-in-out;
+}
+
+.card-product:hover {
+    transform: scale(1.05);
 }
 
 .card-header {
@@ -293,6 +302,11 @@ div.linea-azul {
     align-items: center;
     border-radius: 5px;
     margin: 0px 0px 0px -12px;
+    transition: all .3s ease-in-out;
+}
+
+.body-card-action div:hover {
+    background-color: var(--icon-color);
 }
 
 .body-card-action div img {
@@ -330,6 +344,11 @@ div.linea-azul {
     background-color: var(--icon-color);
     padding: 10px 80px;
     border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.card-footer-footer a:hover {
+    background-color: var(---barra-nav);
 }
 
 .button-stock {
@@ -457,11 +476,6 @@ div.linea-azul {
     font-weight: bold;
 }
 
-input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(1.8);
-}
-
 .paginacion {
     display: flex;
     gap: 15px;
@@ -496,4 +510,21 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.divider-gray {
+    border: 1px solid var(--gray);
+    width: 80%;
+    background-color: var(--gray);
+    height: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.flex-column {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
 }

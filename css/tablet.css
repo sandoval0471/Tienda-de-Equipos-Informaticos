@@ -240,10 +240,29 @@ header {
     }
 }
 
-.header-container-white {
+.ocultar-nav {
     display: none;
 }
 
 .trow-1 input {
     visibility: hidden;
+}
+
+@media (min-width:542px) {
+    .div-filtro-busqueda {
+        width: 487px;
+    }
+    .categoria-container {
+        display: grid;
+        justify-items: center;
+    }
+    .cards-container-filter {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    .detail-card-container-general {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

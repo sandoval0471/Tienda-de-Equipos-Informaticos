@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="css/menu-movil.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/phone.css" media="screen  and (min-width: 0px)">
     <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:480px)">
     <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:768px)">
 </head>
 
 <body>
-
     <header>
         <div class="header-container">
-            <div class="header-nav-top container">
+            <div class="header-nav-top">
                 <div class="info-nav">
                     <div>
                         <img src="img/icons/email.png" alt="correo" title="correo">
@@ -63,10 +63,6 @@
                         <div>
                             <img src="img/icons/cart.png" alt="ShoppCart" title="carro de compras">
                         </div>
-                    </div>
-                    <div>
-                        <a href="listaDeseos.html">Iniciar sesion</a>
-                        <a href="#">Registrarse</a>
                     </div>
                 </div>
             </div>
@@ -120,69 +116,167 @@
 
     <main>
         <!--SECCION NUMERO 1-->
-        <section class="container">
-            <div class="section-banner">
-                <div class="banner-info">
-                    <img src="img/banners/banner-1.jpg" alt="Banner de la pagina">
+        <section class="container detail-general-container">
+            <div class="detail-white-container">
+                <div class="detail-card-container-general">
+                    <div class="detail-img-container">
+                        <div class="img-product-detail">
+                            <img src="img/ryzen-complte.png" alt="imagen producto" title="Amd Ryzen producto">
+                        </div>
+                        <div class="img-product-other">
+                            <div class="div-img-product-other-1">
+                                <img src="img/img.jpg" alt="img ryzen" title="imagen del producto">
+                            </div>
+                            <div>
+                                <img src="img/prod 2.jpg" alt="img ryzen" title="imagen del producto">
+                            </div>
+                            <div>
+                                <img src="img/prod 3.jpg" alt="img ryzen" title="imagen del producto">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-general-info">
+                        <div class="title-detail-general">
+                            <h3>Ryzen 5 3600x</h3>
+                        </div>
+
+                        <div class="middle-detail-general">
+                            <div><img src="img/icons/estrellas 2.jpg" alt="estrella"></div>
+                            <div>
+                                <p class="button-stock">INSTOCK</p>
+                            </div>
+                        </div>
+
+                        <div class="product-price-container">
+                            <div class="price-detail-product">
+                                <p>US$ 37.00</p>
+                            </div>
+                            <div class="discount-detail-product">
+                                <span class="span-discount">25% OFF</span>
+                                <span class="span-old-price">$50.00</span>
+                            </div>
+                        </div>
+
+                        <div class="resumen-general-product">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate repellat magni exercitationem non, quaerat consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate.
+                            </p>
+                        </div>
+
+                        <div class="color-general-product">
+                            <div class="color-filter_container">
+                                <div class='py'>
+                                    <label>
+                                        <input type="radio" class="option-input radio radio-1" name="example" checked />
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="option-input radio radio-2" name="example" />
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="option-input radio radio-3" name="example" />
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="option-input radio radio-4" name="example" />
+                                    </label>
+                                    <label>
+                                        <input type="radio" class="option-input radio radio-5" name="example" />
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="actions-detail-general">
+                            <div class="quantity">
+                                <input type="number" min="1" max="9" step="1" value="1">
+                            </div>
+                            <div>
+                                <a href="carroCompras.html" class="btn-primary">AGREGAR AL CARRO</a>
+                            </div>
+                            <div>
+                                <a href="listaDeseos.html" class="btn-primary-icon"><img src="img/icons/heart 2.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="categories-detail-product">
+                            <div class="linea-detail-general"></div>
+                            <p>Categorias: Hardware, Procesador</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-info">
-                    <div>
-                        <h3>Arma tu pc Gamer</h3>
-                        <p>Busca tu pc Ideal aqui</p>
+
+                <div class="detail-product-especification">
+                    <div class="especification-container-divider">
+                        <div class="divider-content container">
+                            <h2 class="subtitulo">especificaciones</h2>
+                            <div class="linea">
+                                <div class="linea-azul"></div>
+                            </div>
+                        </div>
                     </div>
                     <div>
-                        <a class="btn-primary" href="#">Compra</a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate repellat magni exercitationem non, quaerat consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditateLorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Earum cupiditate repellat magni exercitationem non, quaerat consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditateLorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
                     </div>
+                </div>
+
+                <div class="detail-product-description">
+                    <div class="especification-container-divider">
+                        <div class="divider-content container">
+                            <h2 class="subtitulo">descripción</h2>
+                            <div class="linea">
+                                <div class="linea-azul"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditate repellat magni exercitationem non, quaerat consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditateLorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Earum cupiditate repellat magni exercitationem non, quaerat consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cupiditateLorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comments-section-detail">
+                    <div class="tabpane-comments-section">
+                        <div class="tab-comment">COMENTARIOS</div>
+                        <div class="tab-reviews">REVIEWS</div>
+                    </div>
+
+                    <div class="commnet-card">
+                        <div class="header-comment-card">
+                            <div><img src="img/icons/user 1.png"></div>
+                            <div>
+                                <h3>Steven espinoza</h3>
+                            </div>
+                        </div>
+                        <div class="footer-comment-card">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit?, Lorem ipsum dolor sit amet consectetur adipisicing elit?,
+                            </p>
+                        </div>
+                    </div>
+
+                    <form class="comment-option-detail">
+                        <div class="icon-user-comment">
+                            <img src="img/icons/user 1.png">
+                        </div>
+                        <div class="textarea-comment">
+                            <textarea cols="30" rows="10" required></textarea>
+                        </div>
+                        <div class="before-textarea">
+                            <button type="submit" class="btn-primary">Comentar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!--SECCION NUMERO 2-->
-        <section class="container">
-            <div class="servicios-container">
-                <div class="servicios-container-item">
-                    <img src="img/icons/Envio.png" alt="Envio icon" title="Envios">
-                    <div>
-                        <div>
-                            <h3>Envio Gratis</h3>
-                            <p>Pedidos mayores a US$100</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="servicios-container-item">
-                    <img src="img/icons/Reembolsos.png" alt="Icono de rembolsos" title="rembolsos">
-                    <div>
-                        <div>
-                            <h3>Rembolsos</h3>
-                            <p>Plazo de 30 dias</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="servicios-container-item">
-                    <img src="img/icons/PagoSeguro.png" alt="Icono de pago seguro" title="Pago Seguro">
-                    <div>
-                        <div>
-                            <h3>Pago Seguro</h3>
-                            <p>Pago Seguro</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="servicios-container-item">
-                    <img src="img/icons/ChatEnLinea.png" alt="Chat en linea" title="Chat en linea">
-                    <div>
-                        <div>
-                            <h3>Chat en linea</h3>
-                            <p>Servicio 24/7</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--DIVIDER-->
         <section class="content-breakpoints">
             <div class="divider-content container">
-                <h2 class="subtitulo">Ofertas</h2>
+                <h2 class="subtitulo">Productos relacionados</h2>
                 <div class="linea">
                     <div class="linea-azul"></div>
                 </div>
@@ -388,150 +482,6 @@
                 </div>
             </div>
         </section>
-
-        <!--SECCION DE NOTEBOOKS-->
-        <section class="container">
-            <div class="notebook-section">
-                <div class="fondo-panel fondo-panel--notebook">
-                    <div class="data-info-panel">
-                        <h3>ARMAR TU PC GAMER?</h3>
-                        <p>busca tu pc ideal aqui!!!</p>
-                    </div>
-                    <div class="btn-info-panel">
-                        <a class="btn-primary" href="#">Ver mas</a>
-                    </div>
-                </div>
-                <div class="fondo-panel fondo-panel--desktop">
-                    <div class="data-info-panel">
-                        <h3>ARMAR TU PC GAMER?</h3>
-                        <p>busca tu pc ideal aqui!!!</p>
-                    </div>
-                    <div class="btn-info-panel">
-                        <a class="btn-primary" href="#">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--DIVIDER-->
-        <section class="content-breakpoints">
-            <div class="divider-content container">
-                <h2 class="subtitulo">Computadoras</h2>
-                <div class="linea">
-                    <div class="linea-azul"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--SECCION DE -->
-        <section class="container">
-            <div class="section-pc">
-                <div class="fondo-panel fondo-panel--pc">
-                    <div class="data-info-panel">
-                        <h3>ARMAR TU PC GAMER?</h3>
-                        <p>busca tu pc ideal aqui!!!</p>
-                    </div>
-                    <div class="btn-info-panel">
-                        <a class="btn-primary" href="#">Ver mas</a>
-                    </div>
-                </div>
-                <!--AGREGAR CARDS-->
-                <div class="card-product" id="product_0">
-                    <div class="card-header">
-                        <div class="descuento-header">
-                            <h3>25% DESC</h3>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="body-card-img">
-                            <img src="img/mouse 1.png" alt="producto img">
-                        </div>
-                        <div class="body-card-action">
-                            <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
-                            <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-head">
-                            <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
-                            <div>
-                                <p class="button-stock">INSTOCK</p>
-                            </div>
-                        </div>
-                        <div class="card-footer-main">
-                            <h3>Lorem ipsum dolor sit</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
-                        </div>
-                        <div class="card-footer-footer">
-                            <a href="#">DETALLES</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-product" id="product_1">
-                    <div class="card-header">
-                        <div class="descuento-header">
-                            <h3>25% DESC</h3>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="body-card-img">
-                            <img src="img/mouse 1.png" alt="producto img">
-                        </div>
-                        <div class="body-card-action">
-                            <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
-                            <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-head">
-                            <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
-                            <div>
-                                <p class="button-stock">INSTOCK</p>
-                            </div>
-                        </div>
-                        <div class="card-footer-main">
-                            <h3>Lorem ipsum dolor sit</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
-                        </div>
-                        <div class="card-footer-footer">
-                            <a href="#">DETALLES</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-product" id="product_2">
-                    <div class="card-header">
-                        <div class="descuento-header">
-                            <h3>25% DESC</h3>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="body-card-img">
-                            <img src="img/mouse 1.png" alt="producto img">
-                        </div>
-                        <div class="body-card-action">
-                            <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
-                            <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="card-footer-head">
-                            <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
-                            <div>
-                                <p class="button-stock">INSTOCK</p>
-                            </div>
-                        </div>
-                        <div class="card-footer-main">
-                            <h3>Lorem ipsum dolor sit</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
-                        </div>
-                        <div class="card-footer-footer">
-                            <a href="#">DETALLES</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <div class="footer-bg">
@@ -592,6 +542,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/carrusel.js"></script>
+    <script src="js/input_number.js"></script>
 </body>
 
 </html>
