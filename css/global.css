@@ -360,114 +360,8 @@ div.linea-azul {
 .container-white {
     background-color: var(--blanco);
     border-radius: 25px;
-    padding: 80px;
     margin-top: 30px;
     margin-bottom: 30px;
-}
-
-
-/*Blog phone*/
-
-.article {
-    margin-top: 20px;
-    position: relative;
-    border-bottom: 2px solid var(--gray);
-    padding-bottom: 20px;
-}
-
-.article:last-of-type {
-    border-bottom: none;
-}
-
-.article__img {
-    background-image: url(../img/banners/img_articulo1.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 235px;
-}
-
-.article__img--2 {
-    background-image: url(../img/banners/img_articulo2.jpg);
-}
-
-.article__img--3 {
-    background-image: url(../img/banners/img_articulo3.jpg);
-}
-
-.article__text {
-    width: 95%;
-    background-color: var(--blanco);
-    padding: 20px;
-    margin: 0 auto;
-    margin-top: -40px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.article__text p {
-    text-align: center;
-    font-size: 24px;
-    color: var(--font);
-}
-
-.article__boton {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: right;
-}
-
-
-/*Blog Tablet*/
-
-@media (min-width: 480px) {
-    .article__img {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .article__boton {
-        position: absolute;
-        top: 120px;
-        left: 70px;
-    }
-}
-
-
-/*Desktop*/
-
-@media (min-width: 768px) {
-    .article {
-        display: flex;
-    }
-    .article__img {
-        height: 400px;
-    }
-    .article__text {
-        width: 50%;
-        margin-top: 20px;
-        margin-left: -60px;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        display: flex;
-        align-items: center;
-        height: 500px;
-    }
-    .article__text--inverso {
-        order: -1;
-        margin-left: 0px;
-        margin-right: -60px;
-        z-index: 1;
-    }
-    .article__text p {
-        font-size: 24px;
-    }
-    .article__boton {
-        position: absolute;
-        top: 300px;
-        left: 30px;
-    }
-    .article__boton--inverso {
-        left: 0px;
-        right: 30px;
-    }
 }
 
 
@@ -559,102 +453,47 @@ div.linea-azul {
     color: var(--blanco);
 }
 
-
-/*Footer tablet*/
-
-@media (min-width: 480px) {
-    .footer {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .bloque-footer:nth-child(2) {
-        grid-column: 2 / 3;
-    }
-    .bloque-footer:nth-child(3) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    .tel-email-dir {
-        display: flex;
-        gap: 20px;
-    }
+.header-container-white label {
+    font-weight: bold;
 }
 
-
-/*Footer desktop*/
-
-@media (min-width: 960px) {
-    .footer {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    .mapa {
-        display: flex;
-        grid-column: 2 / 3;
-        align-items: center;
-        padding-right: 30px;
-    }
-    .bloque-footer:nth-child(2) {
-        grid-column: 3 / 4;
-    }
-    .bloque-footer:nth-child(3) {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.8);
 }
 
-
-/*AcercaDe phone*/
-
-.caracteristica {
-    margin: 20px 0;
+.paginacion {
+    display: flex;
+    gap: 15px;
 }
 
-.caracteristica__titulo {
-    color: var(--icon-color);
+.paginacion div {
+    padding: 5px;
+    font-weight: bold;
 }
 
-.caracteristica__img {
-    margin: 15px 0;
-    width: 30%;
+#pa-1 {
+    width: 30px;
+    background-color: var(--icon-color);
+    border-radius: 5px;
+    color: var(--blanco);
 }
 
-.contenedor-campos {
-    border: none;
-    display: grid;
-    padding: 20px;
+.content-header-lista-deseo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.contenedor-campos textarea {
-    height: 150px;
-    resize: none;
-}
-
-
-/*AcercaDe Tablet*/
-
-@media (min-width: 480px) {
-    .caracteristicas {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .contacto {
-        margin: 0 auto;
-    }
-}
-
-
-/*AcercaDe Desktop*/
-
-@media (min-width: 768px) {
-    .caracteristicas {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    .contacto {
-        width: 70%;
-    }
+.td-1 h3,
+.td-2 h3,
+.td-3 h3,
+.td-4 h3,
+.td-5 h3 {
+    color: var(--gray);
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

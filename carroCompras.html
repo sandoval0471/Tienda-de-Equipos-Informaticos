@@ -115,7 +115,7 @@
         <!--DIVIDER-->
         <section class="content-breakpoints">
             <div class="divider-content container">
-                <h2 class="subtitulo">LISTA DE DESEOS</h2>
+                <h2 class="subtitulo">Carro de Compras</h2>
                 <div class="linea">
                     <div class="linea-azul"></div>
                 </div>
@@ -135,13 +135,6 @@
                                 <img src="img/icons/trash-can (1).png"> 
                             </button>
                         </div>
-                        <div class="paginacion">
-                            <div id="pa-1">1</div>
-                            <div id="pa-2">2</div>
-                            <div id="pa-3">3</div>
-                            <div>...</div>
-                            <div id="pa-9">9</div>
-                        </div>
                     </div>
                     <div class="body-container-white">
                         <div class="body-thead">
@@ -155,10 +148,10 @@
                                 <h3>Precio Unitario</h3>
                             </div>
                             <div class="td-4">
-                                <h3>Estado</h3>
+                                <h3>Cantidad</h3>
                             </div>
                             <div class="td-5">
-                                <h3>Acciones</h3>
+                                <h3>Subtotal</h3>
                             </div>
                         </div>
                         <div class="body-tbody">
@@ -170,13 +163,13 @@
                                 <p>Ryzen 3600x</p>
                             </div>
                             <div class="trow-3">
-                                <p>US 50$</p>
+                                <p>US$ 50</p>
                             </div>
-                            <div class="trow-4">
-                                <p>INSTOCK</p>
+                            <div class="trow-4 quantity">
+                                <input type="number" min="1" max="9" step="1" value="1">
                             </div>
                             <div class="trow-5">
-                                <a href="#" class="btn-primary">Detalles</a>
+                                <p>US$ 100</p>
                                 <button type="button" class="btn-icon">
                                     <img src="img/icons/trash-can.png"> 
                                 </button>
@@ -184,8 +177,40 @@
                         </div>
                     </div>
                 </form>
+
+                <div class="shopping-cart-container">
+                    <div>
+                        <h3>RESUMEN DE COMPRA</h3>
+                    </div>
+                    <div class="shopping-cart-all">
+                        <div class="header-shopping-cart">
+                            <div class="shopping-cart-header">
+                                <p>SUB TOTAL:</p>
+                                <p>US$ 100.00</p>
+
+                                <p>IVA:</p>
+                                <p>US$ 15.00</p>
+
+                                <p>SUB TOTAL:</p>
+                                <p>US$ 0.00</p>
+                            </div>
+                        </div>
+                        <div class="body-shipping-cart">
+                            <div class="linea-azul-cart "></div>
+                            <div class="total-shopping-cart">
+                                <p>TOTAL</p>
+                                <p>US$ 115.00</p>
+                            </div>
+                            <div class="button-shopping-cart">
+                                <a href="#" class="btn-primary">Continuar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
+
     </main>
 
     <div class="footer-bg">
@@ -243,6 +268,9 @@
         </div>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/input_number.js"></script>
 </body>
 
 </html>
