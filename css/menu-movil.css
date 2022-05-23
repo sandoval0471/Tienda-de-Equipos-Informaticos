@@ -49,13 +49,30 @@
     width: 310px;
     height: 100%;
     margin: 0;
-    padding: 20px 10px;
     list-style: none;
     text-align: left;
     background-color: var(--blanco);
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.288);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.514);
     transition: 0.8s;
     z-index: 999;
+}
+
+div.menu_box-img {
+    background-color: var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.411);
+}
+
+div.menu_box-img img {
+    width: 139px;
+    height: 67px;
+}
+
+div.menu_box-content {
+    padding: 13px;
 }
 
 .menu__box p {

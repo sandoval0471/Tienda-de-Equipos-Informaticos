@@ -327,3 +327,76 @@ input[type="checkbox"] {
     width: 250px;
     margin-bottom: 30px;
 }
+
+
+/*MENU DESPLEGABLE*/
+
+.nav-right-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: realtive;
+}
+
+.enlace-opciones-mp {
+    text-decoration: none;
+    display: block;
+    position: realtive;
+}
+
+.enlace-opciones-mp h2 {
+    font-size: 1.8rem;
+    color: var(--font);
+    transition: all 0.3s ease-in-out;
+}
+
+.enlace-opciones-mp h2:hover {
+    color: var(--icon-color);
+}
+
+.menu-desplegable {
+    position: absolute;
+    top: 120px;
+    margin-left: 15px;
+    padding: 2rem 2rem 2rem;
+    font-size: 1.7rem;
+    background-color: var(--fondo);
+    border-color: var(--font);
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.356);
+}
+
+.ocultar {
+    display: none;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem 0.8rem;
+    color: var(--font);
+    position: relative;
+    box-shadow: inset 0 0 var(---barra-nav);
+    transition: 0.6s;
+}
+
+.menu-links:hover {
+    box-shadow: inset 200px 0 var(--icon-color);
+    color: var(--blanco);
+}
+
+.menu-links::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 5px;
+    left: 0;
+}
+
+.menu-links:hover::before {
+    background-color: var(--gray);
+}

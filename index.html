@@ -19,8 +19,8 @@
 <body>
 
     <header>
-        <div class="header-container">
-            <div class="header-nav-top container">
+        <div class="header-container container">
+            <div class="header-nav-top">
                 <div class="info-nav">
                     <div>
                         <img src="img/icons/email.png" alt="correo" title="correo">
@@ -36,9 +36,9 @@
                 </div>
                 <div class="redes-nav">
                     <nav class="redes-nav-header">
-                        <a href="#"><img src="img/icons/facebook.png" alt="facebook"></a>
-                        <a href="#"><img src="img/icons/instagram.png" alt="instagram"></a>
-                        <a href="#"><img src="img/icons/twitter.png" alt="twitter"></a>
+                        <a href="https://www.facebook.com/sevasaonline/"><img class="red-footer" src="img/icons/facebook.png" alt="Icono facebook"></a>
+                        <a href="https://www.instagram.com/sevasaonline/?hl=es"><img class="red-footer" src="img/icons/instagram.png" alt="Icono facebook"></a>
+                        <a href="https://twitter.com/amd"><img class="red-footer" src="img/icons/twitter.png" alt="Icono facebook"></a>
                     </nav>
                 </div>
             </div>
@@ -48,7 +48,6 @@
                         <img src="img/Logo-normal.png" alt="LogoTipo">
                     </a>
                 </div>
-
                 <div class="div-search">
                     <div class="barra">
                         <input type="text" placeholder="buscar">
@@ -58,15 +57,22 @@
                     </div>
                     <div class="div-right-center">
                         <div>
-                            <img src="img/icons/Me gusta.png" alt="megusta" title="Lista de Productos gustados">
+                            <a href="listaDeseos.html"><img src="img/icons/Me gusta.png" alt="megusta" title="Lista de Productos gustados"></a>
                         </div>
                         <div>
-                            <img src="img/icons/cart.png" alt="ShoppCart" title="carro de compras">
+                            <a href="carroCompras.html"><img src="img/icons/cart.png" alt="ShoppCart" title="carro de compras"></a>
                         </div>
                     </div>
-                    <div>
-                        <a href="listaDeseos.html">Iniciar sesion</a>
-                        <a href="#">Registrarse</a>
+                    <div class="div-account-header-container">
+                        <div class="nav-right-1">
+                            <a href="#" class="enlace-opciones-mp" onclick="desplegar()">
+                                <h2>My cuenta</h2>
+                                <div class="menu-desplegable ocultar">
+                                    <a href="login.html" class="menu-links">Iniciar Sesion</a>
+                                    <a href="sing-up.html" class="menu-links">Registrarse</a>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,35 +92,36 @@
                             <span></span>
                         </label>
                         <ul class="menu__box">
-                            <p>Generales</p>
-                            <li><a class="menu__item" href="#">inicio</a></li>
-                            <li><a class="menu__item" href="#">Categorias</a></li>
-                            <li><a class="menu__item" href="#">Catalogo</a></li>
-                            <li><a class="menu__item" href="#">Ofertas</a></li>
-                            <li><a class="menu__item" href="blog.html">Blog</a></li>
-                            <li><a class="menu__item" href="acercade.html">Acerca De</a></li>
-                            <p>Acciones</p>
-                            <li><a class="menu__item" href="#">Lista de Deseos</a></li>
-                            <li><a class="menu__item" href="#">Carro de Compras</a></li>
-                            <p>Cuenta</p>
-                            <li><a class="menu__item" href="#">Inicio Sesion</a></li>
-                            <li><a class="menu__item" href="#">Registrarse</a></li>
+                            <div class="menu_box-img">
+                                <img src="img/Logo-normal.png" alt="logo">
+                            </div>
+                            <div class="menu_box-content">
+                                <p>Generales</p>
+                                <li><a class="menu__item" href="index.html">Inicio</a></li>
+                                <li><a class="menu__item" href="categoria.html">Catalogo</a></li>
+                                <li><a class="menu__item" href="blog.html">Blog</a></li>
+                                <li><a class="menu__item" href="acercade.html">Acerca De</a></li>
+                                <p>Acciones</p>
+                                <li><a class="menu__item" href="listaDeseos.html">Lista de Deseos</a></li>
+                                <li><a class="menu__item" href="carroCompras.html">Carro de Compras</a></li>
+                                <p>Cuenta</p>
+                                <li><a class="menu__item" href="login.html">Inicio Sesion</a></li>
+                                <li><a class="menu__item" href="sing-up.html">Registrarse</a></li>
+                            </div>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="header-nav-bottom">
-                <nav class="container nav-header">
-                    <ul>
-                        <li><a href="#" class="cool-link ">inicio</a></li>
-                        <li><a href="#" class="cool-link ">Categorias</a></li>
-                        <li><a href="#" class="cool-link ">Catalogo</a></li>
-                        <li><a href="#" class="cool-link ">Ofertas</a></li>
-                        <li><a href="blog.html" class="cool-link ">Blog</a></li>
-                        <li><a href="acercade.html" class="cool-link ">Acerca de</a></li>
-                    </ul>
-                </nav>
-            </div>
+        </div>
+        <div class="header-nav-bottom">
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="index.html" class="cool-link ">inicio</a></li>
+                    <li><a href="categoria.html" class="cool-link ">Catalogo</a></li>
+                    <li><a href="blog.html" class="cool-link ">Blog</a></li>
+                    <li><a href="acercade.html" class="cool-link ">Acerca de</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -131,7 +138,7 @@
                         <p>Busca tu pc Ideal aqui</p>
                     </div>
                     <div>
-                        <a class="btn-primary" href="#">Compra</a>
+                        <a class="btn-primary" href="categoria.html">Compra</a>
                     </div>
                 </div>
             </div>
@@ -224,7 +231,7 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                                     </div>
                                     <div class="card-footer-footer">
-                                        <a href="#">DETALLES</a>
+                                        <a href="detalle.html">DETALLES</a>
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +262,7 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                                     </div>
                                     <div class="card-footer-footer">
-                                        <a href="#">DETALLES</a>
+                                        <a href="detalle.html">DETALLES</a>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +293,7 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                                     </div>
                                     <div class="card-footer-footer">
-                                        <a href="#">DETALLES</a>
+                                        <a href="detalle.html">DETALLES</a>
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +324,7 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                                     </div>
                                     <div class="card-footer-footer">
-                                        <a href="#">DETALLES</a>
+                                        <a href="detalle.html">DETALLES</a>
                                     </div>
                                 </div>
                             </div>
@@ -348,7 +355,7 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                                     </div>
                                     <div class="card-footer-footer">
-                                        <a href="#">DETALLES</a>
+                                        <a href="detalle.html">DETALLES</a>
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +386,7 @@
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                                     </div>
                                     <div class="card-footer-footer">
-                                        <a href="#">DETALLES</a>
+                                        <a href="detalle.html">DETALLES</a>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +405,7 @@
                         <p>busca tu pc ideal aqui!!!</p>
                     </div>
                     <div class="btn-info-panel">
-                        <a class="btn-primary" href="#">Ver mas</a>
+                        <a class="btn-primary" href="categoria.html">Ver mas</a>
                     </div>
                 </div>
                 <div class="fondo-panel fondo-panel--desktop">
@@ -407,7 +414,7 @@
                         <p>busca tu pc ideal aqui!!!</p>
                     </div>
                     <div class="btn-info-panel">
-                        <a class="btn-primary" href="#">Ver mas</a>
+                        <a class="btn-primary" href="categoria.html">Ver mas</a>
                     </div>
                 </div>
             </div>
@@ -432,7 +439,7 @@
                         <p>busca tu pc ideal aqui!!!</p>
                     </div>
                     <div class="btn-info-panel">
-                        <a class="btn-primary" href="#">Ver mas</a>
+                        <a class="btn-primary" href="categoria.html">Ver mas</a>
                     </div>
                 </div>
                 <!--AGREGAR CARDS-->
@@ -463,7 +470,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                         </div>
                         <div class="card-footer-footer">
-                            <a href="#">DETALLES</a>
+                            <a href="detalle.html">DETALLES</a>
                         </div>
                     </div>
                 </div>
@@ -494,7 +501,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                         </div>
                         <div class="card-footer-footer">
-                            <a href="#">DETALLES</a>
+                            <a href="detalle.html">DETALLES</a>
                         </div>
                     </div>
                 </div>
@@ -525,7 +532,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un</p>
                         </div>
                         <div class="card-footer-footer">
-                            <a href="#">DETALLES</a>
+                            <a href="detalle.html">DETALLES</a>
                         </div>
                     </div>
                 </div>
@@ -545,8 +552,8 @@
                 <p class="bloque-footer__titulo">Comentar algo:</p>
 
                 <form class="formulario-footer">
-                    <input class="input-text" type="text" placeholder="Email:">
-                    <textarea class="input-text" placeholder="Comentario:"></textarea>
+                    <input class="input-text" type="text" placeholder="Email:" required>
+                    <textarea class="input-text" placeholder="Comentario:" required></textarea>
 
                     <input type="submit" class="btn-primary" value="Publicar">
                 </form>
@@ -576,9 +583,9 @@
                     <p class="bloque-footer__titulo">Redes sociales</p>
 
                     <div class="redes-footer">
-                        <img class="red-footer" src="img/icons/facebook.png" alt="Icono facebook">
-                        <img class="red-footer" src="img/icons/instagram.png" alt="Icono facebook">
-                        <img class="red-footer" src="img/icons/twitter.png" alt="Icono facebook">
+                        <a href="https://www.facebook.com/sevasaonline/"><img class="red-footer" src="img/icons/facebook.png" alt="Icono facebook"></a>
+                        <a href="https://www.instagram.com/sevasaonline/?hl=es"><img class="red-footer" src="img/icons/instagram.png" alt="Icono facebook"></a>
+                        <a href="https://twitter.com/amd"><img class="red-footer" src="img/icons/twitter.png" alt="Icono facebook"></a>
                     </div>
                 </div>
             </div>
@@ -592,6 +599,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/carrusel.js"></script>
+    <script src="js/header-dropdown.js"></script>
 </body>
 
 </html>

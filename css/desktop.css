@@ -1,14 +1,10 @@
-.content {
-    padding: 35px 50px;
-    display: grid;
-    justify-content: center;
-}
-
 header {
-    height: 179px;
+    height: auto;
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .phone-header-center {
@@ -17,23 +13,30 @@ header {
 
 .header-nav-center {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 100px;
+    width: 100%;
+}
+
+.div-logo {
+    width: 20%;
 }
 
 .div-search {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70%;
     gap: 30px;
 }
 
 .div-search div.barra {
-    width: 500px;
+    width: 60%;
     height: 42px;
     padding: 0px 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--icon-color);
     border-radius: 10px;
 }
@@ -41,11 +44,15 @@ header {
 .div-search div.barra input[type="text"] {
     padding: 0px 10px;
     background-color: transparent;
-    width: 651px;
-    height: 52px;
-    font-size: 1.5rem;
+    width: 90%;
+    height: 90%;
+    font-size: 1.7rem;
     border: none;
     outline: none;
+    color: var(--blanco);
+}
+
+.div-search div.barra input::placeholder {
     color: var(--blanco);
 }
 
@@ -55,34 +62,31 @@ header {
     cursor: pointer;
 }
 
-.div-search div.barra input::placeholder {
-    color: var(--blanco);
-}
-
 .div-right-center {
     display: flex;
-    align-items: center;
-    padding-left: 10px;
+    justify-content: center;
+    align-content: center;
     gap: 10px;
-    margin-right: 12px;
+    width: 10%;
 }
 
 .div-right-center div img {
-    width: 40px;
-    cursor: pointer;
+    width: 35px;
+    height: 35px;
 }
 
-.div-account,
-.div-account div {
+.div-account-header-container {
+    width: 20%;
+}
+
+.options-account-header {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: normal;
+    justify-content: center;
     gap: 10px;
-    margin-right: 10px;
 }
 
-.div-account img.desplegar {
+.options-account-header img {
     width: 20px;
 }
 
@@ -92,6 +96,8 @@ header {
     align-items: center;
     background-color: var(---barra-nav);
     margin-top: 10px;
+    width: 100%;
+    height: 40px;
 }
 
 .nav-header {
@@ -158,9 +164,6 @@ header {
     }
     .nav-header ul {
         gap: 40px;
-    }
-    .div-search div.barra {
-        width: 400px;
     }
     div.linea {
         width: 700px;

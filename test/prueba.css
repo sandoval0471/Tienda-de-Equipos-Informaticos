@@ -1,0 +1,127 @@
+header {
+    height: 179px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.phone-header-center {
+    display: none;
+}
+
+.header-nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.div-logo img {
+    width: 60%;
+}
+
+.div-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.div-search div.barra {
+    width: 30%;
+    height: 42px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--icon-color);
+    border-radius: 10px;
+}
+
+.div-search div.barra input[type="text"] {
+    padding: 0px 10px;
+    background-color: transparent;
+    width: 651px;
+    height: 52px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: var(--blanco);
+}
+
+.div-search div.barra button[type="submit"] {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.div-search div.barra input::placeholder {
+    color: var(--blanco);
+}
+
+.div-right-center {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+    margin-right: 12px;
+}
+
+.div-right-center div img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.div-account,
+.div-account div {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.div-account img.desplegar {
+    width: 20px;
+}
+
+.header-nav-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(---barra-nav);
+    margin-top: 10px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.nav-header ul li a {
+    text-decoration: none;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.options-account-header label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.options-account-header label img {
+    width: 20px;
+}

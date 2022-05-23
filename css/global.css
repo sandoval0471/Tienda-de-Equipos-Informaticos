@@ -528,3 +528,11 @@ div.linea-azul {
     flex-direction: column;
     padding: 0px 50px;
 }
+
+.modal-div-account-header {
+    display: none;
+}
+
+.options-account-header label img {
+    width: 32px;
+}
