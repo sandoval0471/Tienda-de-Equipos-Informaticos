@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/phone.css" media="screen  and (min-width: 0px)">
     <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:480px)">
     <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:769px)">
+    <link rel="stylesheet" href="css/credenciales.css">
 </head>
 
 <body>
@@ -67,8 +68,8 @@
                             <a href="#" class="enlace-opciones-mp" onclick="desplegar()">
                                 <h2>My cuenta</h2>
                                 <div class="menu-desplegable ocultar">
-                                    <a href="login.html" class="menu-links">Iniciar Sesion</a>
-                                    <a href="sing-up.html" class="menu-links">Registrarse</a>
+                                    <a href="#modalLogin" class="menu-links">Iniciar Sesion</a>
+                                    <a href="#modalRegistro" class="menu-links">Registrarse</a>
                                 </div>
                             </a>
                         </div>
@@ -227,6 +228,101 @@
     </div>
 
     <script src="js/header-dropdown.js"></script>
+
+    <!--#region Modales  -->
+
+
+    <div id="modalLogin" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo-soBig.png" alt="logo">
+                </a>
+            </div>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre De Usuario</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordMe">
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox">Recuerdame</label>
+                </div>
+                <div class="pass">¿Olvidó Su Contraseña?</div>
+                <input type="submit" value="Iniciar Sesion">
+                <div class="signout_link"> <a href="#">Regresar</a>
+                </div>
+                <div class="signup_link">
+                    ¿No posee una cuenta? <a href="#modalRegistro">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalRegistro" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo-soBig.png" alt="logo">
+                </a>
+            </div>
+            <form method="post">
+                <div class="nombreCompletoRegistro">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Nombre</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Apellido</label>
+                    </div>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre de Usuario</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Confirmar Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Direccion</label>
+                </div>
+                <div class="txt_field">
+                    <input type="tel" required>
+                    <span></span>
+                    <label>Télefono</label>
+                </div>
+                <input type="submit" value="Registrarse">
+                <div class="signout_link"> <a href="#">Regresar</a>
+                </div>
+                <div class="signup_link">
+                    ¿Ya tienes una cuenta? <a href="#modalLogin">Iniciar Sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--#endregion -->
+
 </body>
 
 </html>

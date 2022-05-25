@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informatica3D</title>
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/credenciales.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/menu-movil.css">
     <link rel="stylesheet" href="css/button.css">
@@ -68,8 +69,8 @@
                             <a href="#" class="enlace-opciones-mp" onclick="desplegar()">
                                 <h2>My cuenta</h2>
                                 <div class="menu-desplegable ocultar">
-                                    <a href="login.html" class="menu-links">Iniciar Sesion</a>
-                                    <a href="sing-up.html" class="menu-links">Registrarse</a>
+                                    <a href="#modalLogin" class="menu-links">Iniciar Sesion</a>
+                                    <a href="#modalRegistro" class="menu-links">Registrarse</a>
                                 </div>
                             </a>
                         </div>
@@ -105,8 +106,8 @@
                                 <li><a class="menu__item" href="listaDeseos.html">Lista de Deseos</a></li>
                                 <li><a class="menu__item" href="carroCompras.html">Carro de Compras</a></li>
                                 <p>Cuenta</p>
-                                <li><a class="menu__item" href="login.html">Inicio Sesion</a></li>
-                                <li><a class="menu__item" href="sing-up.html">Registrarse</a></li>
+                                <li><a class="menu__item" href="#modalLogin">Inicio Sesion</a></li>
+                                <li><a class="menu__item" href="#modalRegistro">Registrarse</a></li>
                             </div>
                         </ul>
                     </nav>
@@ -126,6 +127,94 @@
     </header>
 
     <main>
+        <section class="content-breakpoints">
+            <div class="divider-content container">
+                <h2 class="subtitulo">Chequeo de Compra</h2>
+                <div class="linea">
+                    <div class="linea-azul"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container container-white">
+            <div class="after-container-white-shopping-cart">
+                <form class="formulario-detalleCompra">
+                    <div>
+                        <h3>Detalle de Compra</h3>
+                    </div>
+                    <div class="detail-purchase-data detail-purchase-div">
+                        <input class="input-detail-purchase" type="text" placeholder="Primer Nombre" required>
+                        <input class="input-detail-purchase" type="text" placeholder="Segundo Nombre" required>
+                    </div>
+                    <div class="detail-purchase-data detail-purchase-div">
+                        <input class="input-detail-purchase" type="text" placeholder="Primer Apellido" required>
+                        <input class="input-detail-purchase" type="text" placeholder="Segundo Apellido" required>
+                    </div>
+                    <div class="detail-purchase-div">
+                        <input class="input-detail-purchase" type="email" placeholder="Email" required>
+                    </div>
+                    <div class="detail-purchase-div">
+                        <textarea class="input-detail-purchase" cols="30" rows="5" placeholder="Dirección de envio" required></textarea>
+                    </div>
+                    <div class="detail-purchase-div">
+                        <select class="input-detail-purchase" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="">RAAN</option>
+                            <option value="">RAAS</option>
+                            <option value="">Boaco</option>
+                            <option value="">Carazo</option>
+                            <option value="">Chinandega</option>
+                            <option value="">Chontales</option>
+                            <option value="">Esteli</option>
+                            <option value="">Granada</option>
+                            <option value="">Jinotega</option>
+                            <option value="">León</option>
+                            <option value="">Madriz</option>
+                            <option value="">Managua</option>
+                            <option value="">Matagalpa</option>
+                            <option value="">Nueva Segovia</option>
+                            <option value="">Rio San juan</option>
+                            <option value="">Rivas</option>
+                        </select>
+                    </div>
+                    <div class="detail-purchase-div">
+                        <input class="input-detail-purchase" type="text" placeholder="Telefono" required>
+                    </div>
+                    <div class="detail-purchase-div button-detail-purchase">
+                        <a href="carroCompras.html" class="btn-cancel">Cancelar</a>
+                        <button type="submit" class="btn-primary">Pagar</button>
+                    </div>
+                </form>
+
+                <div class="shopping-cart-container">
+                    <div>
+                        <h3>RESUMEN DE COMPRA</h3>
+                    </div>
+                    <div class="shopping-cart-all">
+                        <div class="header-shopping-cart">
+                            <div class="shopping-cart-header">
+                                <p>SUB TOTAL:</p>
+                                <p>US$ 100.00</p>
+
+                                <p>IVA:</p>
+                                <p>US$ 15.00</p>
+
+                                <p>SUB TOTAL:</p>
+                                <p>US$ 0.00</p>
+                            </div>
+                        </div>
+                        <div class="body-shipping-cart">
+                            <div class="linea-azul-cart "></div>
+                            <div class="total-shopping-cart">
+                                <p>TOTAL</p>
+                                <p>US$ 115.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
@@ -185,7 +274,102 @@
 
     </div>
 
+
+    <!--#region Modales  -->
+
+
+    <div id="modalLogin" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo-soBig.png" alt="logo">
+                </a>
+            </div>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre De Usuario</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordMe">
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox">Recuerdame</label>
+                </div>
+                <div class="pass">¿Olvidó Su Contraseña?</div>
+                <input type="submit" value="Iniciar Sesion">
+                <div class="signout_link"> <a href="#">Regresar</a>
+                </div>
+                <div class="signup_link">
+                    ¿No posee una cuenta? <a href="#modalRegistro">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalRegistro" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo-soBig.png" alt="logo">
+                </a>
+            </div>
+            <form method="post">
+                <div class="nombreCompletoRegistro">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Nombre</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Apellido</label>
+                    </div>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre de Usuario</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Confirmar Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Direccion</label>
+                </div>
+                <div class="txt_field">
+                    <input type="tel" required>
+                    <span></span>
+                    <label>Télefono</label>
+                </div>
+                <input type="submit" value="Registrarse">
+                <div class="signout_link"> <a href="#">Regresar</a>
+                </div>
+                <div class="signup_link">
+                    ¿Ya tienes una cuenta? <a href="#modalLogin">Iniciar Sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--#endregion -->
     <script src="js/header-dropdown.js"></script>
+
 </body>
 
 </html>

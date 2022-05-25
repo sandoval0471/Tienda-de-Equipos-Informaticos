@@ -358,3 +358,42 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
+/*DETALLE DE LA COMPRA*/
+
+.formulario-detalleCompra {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detail-purchase-div {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-detail-purchase {
+    width: 80%;
+    padding: 10px;
+    font-family: 'Inra Sans', sans-serif;
+    font-size: 1.7rem;
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-detail-purchase:focus-visible {
+    border-color: var(--icon-color);
+}
+
+.button-detail-purchase a,
+.button-detail-purchase button {
+    width: 80%;
+}

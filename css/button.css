@@ -400,3 +400,18 @@ input[type="checkbox"] {
 .menu-links:hover::before {
     background-color: var(--gray);
 }
+
+.btn-cancel {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.8rem;
+    padding: 9px 25px;
+    border-radius: 10px;
+    background-color: rgb(190, 40, 40);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-cancel:hover {
+    background-color: rgb(236, 51, 51);
+}
