@@ -397,3 +397,33 @@ header {
 .button-detail-purchase button {
     width: 80%;
 }
+
+.card-content-detail-purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.card-container-all-detail {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.card-content-detail-purchase-img {
+    width: 50%;
+}
+
+.card-content-detail-purchase-img img {
+    width: 100%;
+    text-align: left;
+}
+
+.card-content-detail-purchase-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js "></script>
+</head>
+
+<body>
+    <div class="fabs">
+        <div class="chat">
+            <div class="chat-header">
+                <p>Estoy aqui para ayudarte</p>
+            </div>
+            <div id="chat_converse" class="chat_converse">
+                <div id="converse-contain">
+                    <span class="chat_msg_item chat_msg_item_admin">
+                        <div class="chat_avatar">
+                            <img src="../../img/icons/user-1.png" alt="">
+                        </div>
+                        Hola bienvenido a Informatica3D
+                    </span>
+                    <span class="chat_msg_item chat_msg_item_admin">
+                        <div class="chat_avatar">
+                            <img src="../../img/icons/user-1.png" alt="">
+                        </div>
+                        ¿Como puedo ayudarle?
+                    </span>
+                    <span class="chat_msg_item chat_msg_item_user">
+                        <div class="chat_avatar">
+                            <img src="../../img/icons/user.png" alt="">
+                        </div>
+                        escribe..
+                    </span>
+                </div>
+                <div id="camBox" style="width:100%;height:100%;">
+
+                    <div class="revdivshowimg" style="top:20%;text-align:center;margin:0 auto;">
+
+                        <div id="camera" style="height:auto;text-align:center;margin:0 auto;"></div>
+                        <p>
+                            <input id="close" type="button" value="Close" />
+                        </p>
+                        <input type="hidden" id="rowid" /><input type="hidden" id="dataurl" />
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="fab_field">
+                <a id="fab_listen" class="fab-footer">
+                    <img src="../../img/icons/camera-to-take-photos.png" alt="photo" title="Video Conferencia">
+                </a>
+                <textarea id="chatSend" name="chat_message" placeholder="Escribe un mensaje" class="chat_field chat_message">
+
+                </textarea>
+                <a id="fab_send" class="fab-footer">
+                    <img src="../../img/icons/send-message.png" alt="send" title="Enviar Mensaje">
+                </a>
+            </div>
+        </div>
+        <a id="prime" class="fab">
+            <img src="../../img/icons/live-chat 1.png" alt="chat" class="prime zmdi zmdi-plus">
+        </a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

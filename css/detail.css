@@ -242,3 +242,8 @@ span.span-old-price {
 
 
 /*DETALLE DE  LA COMPRA*/
+
+#map {
+    height: 100px;
+    width: 100%;
+}

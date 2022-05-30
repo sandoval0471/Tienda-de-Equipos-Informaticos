@@ -271,33 +271,40 @@ header {
 /*Detalle carro de compra*/
 
 .formulario-detalleCompra {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+    padding: 25px;
 }
 
+.formulario-detalleCompra,
 .detail-purchase-div {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr;
+    transition: all .3s ease-in-out;
 }
 
 .detail-purchase-data {
-    grid-template-columns: 0.44fr 0.45fr !important;
+    grid-template-columns: 1fr 1fr !important;
 }
 
-.button-detail-purchase {
+.detail-purchase-div input,
+.detail-purchase-div textarea,
+.detail-purchase-div select {
+    width: 100%;
+}
+
+textarea.input-detail-purchase {
+    height: 50px;
+}
+
+.item-button-action {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
     margin-bottom: 30px;
 }
 
-.button-detail-purchase a,
-.button-detail-purchase button {
-    width: 30%;
-    max-width: 200px;
+.title-formulario {
+    margin-top: 30px;
 }

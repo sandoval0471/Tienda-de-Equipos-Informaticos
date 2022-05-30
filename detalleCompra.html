@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/menu-movil.css">
     <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/phone.css" media="screen  and (min-width: 0px)">
     <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:480px)">
     <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
 </head>
 
 <body>
@@ -138,8 +139,9 @@
 
         <section class="container container-white">
             <div class="after-container-white-shopping-cart">
+
                 <form class="formulario-detalleCompra">
-                    <div>
+                    <div class="title-formulario">
                         <h3>Detalle de Compra</h3>
                     </div>
                     <div class="detail-purchase-data detail-purchase-div">
@@ -153,12 +155,13 @@
                     <div class="detail-purchase-div">
                         <input class="input-detail-purchase" type="email" placeholder="Email" required>
                     </div>
-                    <div class="detail-purchase-div">
-                        <textarea class="input-detail-purchase" cols="30" rows="5" placeholder="Dirección de envio" required></textarea>
+                    <div class="detail-purchase-data detail-purchase-div">
+                        <textarea class="input-detail-purchase" cols="30" rows="5" placeholder="Dirección" required></textarea>
+                        <textarea class="input-detail-purchase" cols="30" rows="5" placeholder="Dirección 2 (opcional)"></textarea>
                     </div>
                     <div class="detail-purchase-div">
                         <select class="input-detail-purchase" required>
-                            <option value="">Seleccione una opción</option>
+                            <option value="">Seleccione un Departamento</option>
                             <option value="">RAAN</option>
                             <option value="">RAAS</option>
                             <option value="">Boaco</option>
@@ -176,17 +179,50 @@
                             <option value="">Rio San juan</option>
                             <option value="">Rivas</option>
                         </select>
+                        <input type="text" class="input-detail-purchase" placeholder="Municipio">
                     </div>
                     <div class="detail-purchase-div">
                         <input class="input-detail-purchase" type="text" placeholder="Telefono" required>
                     </div>
-                    <div class="detail-purchase-div button-detail-purchase">
-                        <a href="carroCompras.html" class="btn-cancel">Cancelar</a>
-                        <button type="submit" class="btn-primary">Pagar</button>
+                    <div class="detail-purchase-div">
+                        <h3>localización</h3>
+                        <div id="map"></div>
+                    </div>
+                    <div class="detail-purchase-div">
+                        <h3>Seccion de pago</h3>
+                        <select class="input-detail-purchase" required>
+                            <option value="0">Seleccione una forma de pago</option>
+                            <option value="1">Paypal</option>
+                            <option value="2">Tarjeta de Debito o credito</option>
+                        </select>
+                    </div>
+                    <div class=" detail-purchase-data detail-purchase-div">
+                        <input class="input-detail-purchase" type="text" placeholder="Dueño Tarjeta" required>
+                        <input class="input-detail-purchase" type="text" placeholder="#Tarjeta" required>
+                        <input class="input-detail-purchase" type="date" placeholder="Fecha Exp" required>
+                        <input class="input-detail-purchase" type="text" placeholder="CVV" required>
+                    </div>
+                    <div class="detail-purchase-div">
+                        <div class="item-button-action ">
+                            <a href="carroCompras.html" class="btn-cancel">regresar</a>
+                            <button type="submit" class="btn-primary">Pagar</button>
+                        </div>
                     </div>
                 </form>
 
                 <div class="shopping-cart-container">
+                    <div class="card-content-detail-purchase">
+                        <div class="card-container-all-detail">
+                            <div class="card-content-detail-purchase-img">
+                                <img src="img/icons/prod-1.jpg">
+                            </div>
+                            <div class="card-content-detail-purchase-data">
+                                <h3>Ryzen 5 3600x</h3>
+                                <p>1x US$ 37.00</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div>
                         <h3>RESUMEN DE COMPRA</h3>
                     </div>
@@ -212,7 +248,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -369,7 +404,8 @@
 
     <!--#endregion -->
     <script src="js/header-dropdown.js"></script>
-
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="js/mapa.js"></script>
 </body>
 
 </html>
